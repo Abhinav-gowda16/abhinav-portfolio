@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav U — Aspiring Frontend Developer | BCA Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Abhinav U, a 5th-semester BCA student at PES University aspiring to be a Frontend Developer. Specializing in HTML5, CSS3, JavaScript, and responsive UI/UX design.">
+  <meta name="keywords" content="Abhinav U, Frontend Developer, BCA Student, PES University, Portfolio, HTML5, CSS3, JavaScript, Web Designer, Bangalore">
+  <meta name="author" content="Abhinav U">
+  <meta name="theme-color" content="#090a12">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhinav U — Aspiring Frontend Developer">
+  <meta property="og:description" content="Explore modern frontend projects, responsive web designs, and technical skills by Abhinav U (BCA @ PES University).">
+  <meta property="og:image" content="assets/images/project-1.svg">
+  <meta property="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Outfit (Headings), Inter (Body), JetBrains Mono (Code/Badges) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhinav U",
+    "jobTitle": "Aspiring Frontend Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "PES University"
+    },
+    "description": "5th Semester BCA student passionate about frontend web development, responsive design, and modern JavaScript applications.",
+    "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Responsive Web Design", "Bootstrap", "UI/UX Fundamentals", "Git"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Animated Lighting Layer -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Mouse Spotlight Glow -->
+  <div class="mouse-spotlight" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Abhinav U Home">
+        <div class="brand-badge">AU</div>
+        <div class="brand-text">Abhinav<span>.dev</span></div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="mobile-cta">
+            <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        
+        <!-- Hero Left Column: Intro & Calls to Action -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Frontend Roles & Internships</span>
+          </div>
+
+          <p class="hero-greeting">&lt;Hello, World! /&gt; I'm</p>
+          <h1 class="hero-name">Abhinav <span class="highlight">U</span></h1>
+          
+          <div class="hero-headline">
+            <span id="typing-text">Aspiring Frontend Developer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Bachelor of Computer Applications (BCA) 5th Semester student at <strong>PES University</strong>. 
+            Passionate about crafting pixel-perfect, responsive web interfaces with clean code and modern aesthetics.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i data-lucide="arrow-down-right"></i>
+            </a>
+
+            <button type="button" class="btn btn-outline resume-trigger-btn">
+              <i data-lucide="file-text"></i>
+              <span>Download Resume</span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">5th Sem</span>
+              <span class="metric-label">BCA Student</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">PES Uni</span>
+              <span class="metric-label">Bengaluru, IN</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Responsive UI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Developer Visual & Glowing Rings -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-backdrop-glow"></div>
+            <div class="avatar-frame">
+              <img src="assets/images/profile-avatar.svg" alt="Abhinav U - Frontend Developer Avatar" class="avatar-img">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-pos-1">
+              <i data-lucide="sparkles" style="color: #c084fc;"></i>
+              <span>Modern UI/UX</span>
+            </div>
+            <div class="floating-badge badge-pos-2">
+              <i data-lucide="code-2" style="color: #38bdf8;"></i>
+              <span>Clean Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         About Me Section
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="user"></i>
+            <span>About Me</span>
+          </div>
+          <h2 class="section-title">Passionate About Creating <span class="gradient-text">Exceptional Web Experiences</span></h2>
+          <p class="section-subtitle">Bridging the gap between creative visual designs and structured, performant frontend code.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-narrative reveal-on-scroll">
+            <p>
+              Hello! I'm <strong>Abhinav U</strong>, an aspiring frontend developer currently pursuing my Bachelor of Computer Applications (BCA) in the <strong>5th Semester at PES University</strong>, Bengaluru.
+            </p>
+            <p>
+              My journey into web development began with a curiosity about how raw lines of code transform into vibrant, interactive digital products. Since then, I have immersed myself in mastering core frontend technologies—<strong>HTML5, modern CSS3, and JavaScript (ES6+)</strong>. I believe that a great website isn't just about flashy visuals; it is about performance, accessibility, seamless responsiveness, and clean architecture.
+            </p>
+            <p>
+              When I'm not coding or refining layouts, I actively explore design systems, optimize web performance, study emerging frontend trends, and participate in technical workshops at PES University.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-box">
+                <h4><i data-lucide="check-circle-2"></i> Clean Code</h4>
+                <p>Structured, semantic HTML and modular CSS that scales gracefully.</p>
+              </div>
+              <div class="feature-box">
+                <h4><i data-lucide="layout"></i> Responsive First</h4>
+                <p>Every interface looks pristine on mobile, tablet, and desktop.</p>
+              </div>
+              <div class="feature-box">
+                <h4><i data-lucide="zap"></i> Interactive UX</h4>
+                <p>Delightful micro-interactions and intuitive user journeys.</p>
+              </div>
+              <div class="feature-box">
+                <h4><i data-lucide="book-open"></i> Eager Learner</h4>
+                <p>Continuously sharpening skills and exploring modern libraries.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Details Card -->
+          <div class="about-details-card reveal-on-scroll delay-1">
+            <h3>Quick Details</h3>
+            
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="user-check"></i> Name</span>
+              <span class="detail-val">Abhinav U</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="briefcase"></i> Role</span>
+              <span class="detail-val">Aspiring Frontend Developer</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="graduation-cap"></i> Education</span>
+              <span class="detail-val">BCA (5th Semester)</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="building"></i> University</span>
+              <span class="detail-val">PES University, Bengaluru</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="map-pin"></i> Location</span>
+              <span class="detail-val">Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="mail"></i> Email</span>
+              <span class="detail-val">abhinavu.dev@gmail.com</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i data-lucide="award"></i> Focus</span>
+              <span class="detail-val">Frontend Engineering & UI/UX</span>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button type="button" class="btn btn-outline btn-sm resume-trigger-btn" style="width: 100%;">
+                <i data-lucide="file-text"></i>
+                <span>View Full Curriculum Vitae</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Skills Section
+         ======================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="cpu"></i>
+            <span>Technical Toolkit</span>
+          </div>
+          <h2 class="section-title">My Skills & <span class="gradient-text">Competencies</span></h2>
+          <p class="section-subtitle">Real, demonstrated technologies I use to build modern, responsive web interfaces.</p>
+        </div>
+
+        <div class="skills-notice">
+          <i data-lucide="info"></i>
+          <span>Skill proficiencies reflect hands-on project experience and coursework. Editable in <code>js/data.js</code>.</span>
+        </div>
+
+        <!-- Dynamic Skills Grid rendered from js/data.js -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Injected dynamically via ComponentRenderer -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Education Section
+         ======================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="graduation-cap"></i>
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Foundation</span></h2>
+          <p class="section-subtitle">My academic training and coursework at PES University.</p>
+        </div>
+
+        <div class="education-container" id="education-card">
+          <!-- Injected dynamically via ComponentRenderer -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Projects Section
+         ======================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="folder-git-2"></i>
+            <span>Featured Portfolio</span>
+          </div>
+          <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Showcasing responsive web applications, interactive dashboards, and frontend implementations.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar reveal-on-scroll">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="Vanilla JS">JavaScript Apps</button>
+          <button class="filter-btn" data-filter="Web Apps">Interactive Dashboards</button>
+          <button class="filter-btn" data-filter="Responsive UI">Responsive Design</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Injected dynamically via ComponentRenderer -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         My Services Section
+         ======================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="sparkles"></i>
+            <span>What I Do</span>
+          </div>
+          <h2 class="section-title">My Professional <span class="gradient-text">Services</span></h2>
+          <p class="section-subtitle">Delivering high-quality frontend solutions tailored for modern businesses and applications.</p>
+        </div>
+
+        <!-- Dynamic Services Grid -->
+        <div class="services-grid" id="services-grid">
+          <!-- Injected dynamically via ComponentRenderer -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Contact Section
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="mail"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Together</span></h2>
+          <p class="section-subtitle">Have a project, internship opportunity, or just want to connect? Send me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Channels & Info -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <div class="contact-card-box">
+              <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Contact Information</h3>
+              <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                I am actively looking for <strong>Frontend Developer Internships</strong> and entry-level developer roles. Reach out through the form or my social channels!
+              </p>
+
+              <div class="contact-channels">
+                <a href="mailto:abhinavu.dev@gmail.com" class="contact-channel-item">
+                  <div class="channel-icon">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email Address</span>
+                    <span class="channel-value">abhinavu.dev@gmail.com</span>
+                  </div>
+                </a>
+
+                <div class="contact-channel-item">
+                  <div class="channel-icon">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Current Location</span>
+                    <span class="channel-value">Bengaluru, Karnataka, India</span>
+                  </div>
+                </div>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                  <div class="channel-icon">
+                    <i data-lucide="linkedin"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Professional Network</span>
+                    <span class="channel-value">linkedin.com/in/abhinav-u</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                  <div class="channel-icon">
+                    <i data-lucide="github"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Code Repositories</span>
+                    <span class="channel-value">github.com/abhinav-u</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="contact-form-card reveal-on-scroll delay-1">
+            <form id="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                <div class="form-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. rahul@example.com" required autocomplete="email">
+                <div class="form-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Frontend Internship Opportunity" required>
+                <div class="form-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message here (min. 15 characters)..." required></textarea>
+                <div class="form-error" aria-live="polite"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send"></i>
+                <span>Send Message</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">AU</div>
+            <div class="brand-text">Abhinav<span>.dev</span></div>
+          </div>
+          <p class="footer-brand-desc">
+            BCA 5th Semester &bull; PES University, Bengaluru &bull; Aspiring Frontend Developer
+          </p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Abhinav U</strong>. All rights reserved. Built with HTML5, CSS3 & JavaScript.
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" style="color: var(--text-muted);"><i data-lucide="linkedin"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" style="color: var(--text-muted);"><i data-lucide="github"></i></a>
+          <a href="mailto:abhinavu.dev@gmail.com" aria-label="Email Me" style="color: var(--text-muted);"><i data-lucide="mail"></i></a>
+          
+          <button type="button" class="back-to-top-btn" aria-label="Back to top">
+            <i data-lucide="chevron-up"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Modals
+       ======================================================================== -->
+  <!-- Project Quick View Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-project-title">Project Details</h3>
+        <button type="button" class="modal-close-btn modal-close-trigger" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-project-img" src="" alt="Project Preview" style="width: 100%; border-radius: 10px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1);">
+        <p id="modal-project-desc" style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 1rem;"></p>
+        
+        <h4 style="font-size: 0.95rem; margin-bottom: 10px; color: #fff;">Technologies Applied:</h4>
+        <div id="modal-project-tags" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm modal-close-trigger">Close</button>
+        <a id="modal-project-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <i data-lucide="github"></i> View GitHub
+        </a>
+        <a id="modal-project-demo" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <i data-lucide="external-link"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Resume Modal -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-box" style="max-width: 580px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="resume-modal-title">Abhinav U &mdash; Curriculum Vitae</h3>
+        <button type="button" class="modal-close-btn modal-close-trigger" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 20px; background: rgba(99, 102, 241, 0.1); padding: 16px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.25);">
+          <div style="font-size: 32px;">📄</div>
+          <div>
+            <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 4px;">Abhinav_U_Resume_Frontend.pdf</h4>
+            <p style="font-size: 0.84rem; color: #a5b4fc;">BCA 5th Sem &bull; PES University &bull; Updated November 2026</p>
+          </div>
+        </div>
+
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
+          Choose how you would like to view or download the resume:
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="assets/resume/abhinav-u-resume.html" target="_blank" class="btn btn-primary" style="justify-content: space-between;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+              <i data-lucide="printer"></i>
+              <span>Print / Save as PDF (Formatted Resume)</span>
+            </span>
+            <i data-lucide="external-link"></i>
+          </a>
+
+          <a href="assets/resume/abhinav-u-resume.html" class="btn btn-outline" target="_blank" style="justify-content: space-between;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+              <i data-lucide="eye"></i>
+              <span>Preview Resume in Browser</span>
+            </span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm modal-close-trigger">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Icons Library (Official CDN with fallback) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Core Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
